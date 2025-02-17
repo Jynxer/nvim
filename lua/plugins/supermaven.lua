@@ -1,12 +1,12 @@
 return {
   "supermaven-inc/supermaven-nvim",
-  lazy = true, -- Prevents auto-loading
-  cmd = { "SupermavenStart", "SupermavenStop" }, -- Loads only when these commands are used
+  cmd = { "SupermavenStart" },
   config = function()
     require("supermaven-nvim").setup({
       keymaps = {
         accept_suggestion = "<Tab>",
-        clear_suggestion = "<C-Tab>",
+        clear_suggestion = "<C-]>",
+        accept_word = "<C-j>",
       },
       color = {
         suggestion_color = "#a0a0a0",
