@@ -1,5 +1,7 @@
 return {
   "supermaven-inc/supermaven-nvim",
+  lazy = true, -- Prevents auto-loading
+  cmd = { "SupermavenStart", "SupermavenStop" }, -- Loads only when these commands are used
   config = function()
     require("supermaven-nvim").setup({
       keymaps = {
