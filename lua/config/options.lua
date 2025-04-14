@@ -12,3 +12,8 @@ vim.api.nvim_create_autocmd("FileType", {
     -- }, vim.api.nvim_get_current_buf()) -- Apply only to the current buffer
   end,
 })
+
+-- vim.opt.scrolloff = 4
+
+-- vim.opt.conceallevel = 2
+-- vim.opt.concealcursor = "nc"

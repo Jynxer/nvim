@@ -2,6 +2,10 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- Custom Keymaps:
+
+vim.keymap.set("n", "<leader>a", "gg0vG$", { desc = "Select entire file" })
+
 -- Harpoon:
 
 local harpoon = require("harpoon")
@@ -38,6 +42,8 @@ end, { desc = "Harpoon: Go to previous file" })
 vim.keymap.set("n", "<leader>hn", function()
   harpoon:list():next()
 end, { desc = "Harpoon: Go to next file" })
+
+-- Which Key:
 
 local wk = require("which-key")
 
