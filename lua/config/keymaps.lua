@@ -4,7 +4,8 @@
 
 -- Custom Keymaps:
 
-vim.keymap.set("n", "<leader>a", "gg0vG$", { desc = "Select entire file" })
+vim.keymap.set("n", "<leader>a", "gg0vG$", { desc = "Select entire file" }) -- Visually select entire file
+vim.keymap.set("n", "<leader>r", "<cmd>checktime<CR>", { desc = "Refresh buffer" })
 
 -- Harpoon:
 
